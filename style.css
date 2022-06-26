@@ -1,0 +1,45 @@
+h1 {
+  color: black;
+}
+#parent-menu {
+  background: black;
+  position: relative;
+}
+#child-menu ul {
+  background: blue;
+  color: white;
+  position: absolute;
+}
+h5 {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0 0 30px;
+  border: 5px dashed blueviolet ;
+  position: sticky;
+  top: 50px;
+  right: 10px;
+}
+#sticy-container {
+  position: relative;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  
+}
+.box {
+  flex: 1;
+  height: 100px;
+  background-color: green;
+  margin: 10px;
+}
+.box-2{
+  flex: 3;
+}
+.header{
+  height: 100px;
+  background-color: green;
+  margin: 10px;
+}
