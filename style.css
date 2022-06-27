@@ -21,22 +21,69 @@ h5 {
   top: 50px;
   right: 10px;
 }
+h3 {
+  text-align: center;
+}
 #sticy-container {
   position: relative;
 }
-.container {
+#grid-container-auto {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  margin: 20px 20px 50px 20px;
+}
+#grid-container-sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 50px 50px 50px;
+}
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap-reverse; 
   
 }
+#flex-row {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+#flex-column {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap
+}
 .box {
+  color: white;
+  font-size: 2em;
   flex: 1;
   height: 100px;
   background-color: green;
   margin: 10px;
+  text-align: center;
 }
-.box-2{
-  flex: 3;
+.box-2-flex{
+  flex: 2;
+}
+.box-5-flex{
+  flex: 2;  
+}
+.box-2-grid{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+.box-5-grid{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 .header{
   height: 100px;
